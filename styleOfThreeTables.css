@@ -2,7 +2,6 @@
 body {
     background: url('../../public/images/secondary_background.jpg') center/cover no-repeat;
 }
-
 /* Dark overlay on body background */
 body::before {
     position: fixed;
@@ -11,7 +10,6 @@ body::before {
     background: rgba(26, 25, 25, 0.863) !important;
     z-index: -2;
 }
-
 /* Header title styling */
 .header-title {
     font: bold 24px sans-serif;
@@ -22,7 +20,6 @@ body::before {
     cursor: pointer;
     position: relative;
 }
-
 /* Gold line under header title */
 .linee {
     width: 50px;
@@ -31,12 +28,10 @@ body::before {
     transition: width 0.3s ease;
     margin-top: 5px;
 }
-
 /* Extend line on hover */
 .header-title:hover .linee {
     width: 80px;
 }
-
 /* Search container styling */
 .search-container {
     display: flex;
@@ -47,17 +42,18 @@ body::before {
     margin-left: auto;
     width: fit-content;
     max-width: 100%;
-     border: none;
+    border: none;
 }
 
 /* Transparent search input and button */
-.search-input, .search-btn {
+.search-input,
+.search-btn {
     background-color: transparent;
     border: none;
     color: #fff;
     font-size: 14px;
     outline: none;
-    
+
 }
 
 /* Gold search button styling */
@@ -65,7 +61,6 @@ body::before {
     cursor: pointer;
     color: #BF9530;
     /* padding-left: 10px; */
- 
 }
 
 /* Articles table styling */
@@ -76,32 +71,30 @@ body::before {
 }
 
 /* Table cell padding and color */
-.articles-table th, .articles-table td {
+.articles-table th,
+.articles-table td {
     padding: 20px;
     text-align: left;
     color: #fff;
     border: none;
 }
-
 /* Background and font size settings */
 .articles-table td {
     background: rgba(0, 0, 0, 0.308) !important;
     font-size: 14px;
     vertical-align: middle;
 }
-
 /* Table header styling */
 .articles-table th {
     background: transparent !important;
     font-size: 16px;
     font-weight: bold;
 }
-
-/* Button styling */
+/* Button puplish, draft*/
 .btn {
     color: #fff;
     font-size: 12px;
-    min-width: 45%;
+    width: 90%;
     border-radius: 1rem;
 }
 
@@ -118,13 +111,15 @@ body::before {
 /* button of status */
 .bg-primary {
     background-color: #BF9530 !important;
-    color: #fff; /* White text */
+    color: #fff;
+    /* White text */
 }
 
 /* button of status */
 .bg-grey {
     background-color: #D0D0D0 !important;
-    color: #fff; /* White text */
+    color: #fff;
+    /* White text */
 }
 
 /* Responsive design for small screens */
@@ -167,9 +162,9 @@ body::before {
         margin-top: 0.5rem;
     }
 
-    /* Adjust button width on mobile */
+    /* puplish, draft buttons width on mobile */
     .articles-table .btn {
-        width: 17%;
+        width: 43%;
     }
 
     /* Date-time styling for mobile */
