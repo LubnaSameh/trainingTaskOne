@@ -15,7 +15,7 @@ const Line = styled.div`
         }
 `;
 
-const Jobs = () => {
+const ApplicantJobs = () => {
     const applications = [
         { applicant: "the Applicant name", experience: '2 Years', email: 'usertwo@gmail.com', mobile: '002011289304' },
         { applicant: "the company name", experience: '3 Years', email: 'usertwo@gmail.com', mobile: '002011289304' },
@@ -79,10 +79,30 @@ const Jobs = () => {
                             </tbody>
                         </table>
                     </div>
+                    <div class="pagination">
+                        <a href="#" class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+                                <circle cx="12" cy="12" r="11" fill="none" stroke="#BF9530" stroke-width="2" />
+                                <path d="M14 16l-4-4 4-4" fill="none" stroke="#BF9530" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <span>.....</span>
+
+                        <a href="#" class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+                                <circle cx="12" cy="12" r="11" fill="none" stroke="#BF9530" stroke-width="2" />
+                                <path d="M10 8l4 4-4 4" fill="none" stroke="#BF9530" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div>
     );
 };
 
-export default Jobs;
+export default ApplicantJobs;
