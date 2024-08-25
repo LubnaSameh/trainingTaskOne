@@ -12,6 +12,7 @@ const Articles = () => {
     ];
 
     return (
+
         <div className="container mt-3">
             <div className="row">
                 {/* Left Div */}
@@ -20,6 +21,7 @@ const Articles = () => {
                         <p className="text-white">Here you can add the content you want to place on the left side.</p>
                     </div>
                 </div>
+
                 {/* Right Div */}
                 <div className="col-lg-8 col-md-12">
                     {/* content of right div */}
@@ -76,6 +78,27 @@ const Articles = () => {
                             </tbody>
                         </table>
                     </div>
+                    <div class="pagination">
+                        <a href="#" class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+                                <circle cx="12" cy="12" r="11" fill="none" stroke="#BF9530" stroke-width="2" />
+                                <path d="M14 16l-4-4 4-4" fill="none" stroke="#BF9530" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <span>.....</span>
+
+                        <a href="#" class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+                                <circle cx="12" cy="12" r="11" fill="none" stroke="#BF9530" stroke-width="2" />
+                                <path d="M10 8l4 4-4 4" fill="none" stroke="#BF9530" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+
+
                 </div>
             </div>
         </div>
