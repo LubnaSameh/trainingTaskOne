@@ -76,6 +76,10 @@ body::before {
     border-spacing: 0 15px;
 }
 
+.articles-table td:nth-child(5) {
+    text-align: center;
+}
+
 /* Table cell padding and color */
 .articles-table th,
 .articles-table td {
@@ -131,6 +135,38 @@ body::before {
     /* White text */
 }
 
+/* //////// */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+
+.pagination a {
+    color: #fff;
+    padding: 4px 2.5px;
+    margin: 0 2px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.pagination a.arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.pagination a.arrow svg {
+    height: 26px;
+}
+
+.pagination span {
+    color: #fff;
+    margin: 0px 3px;
+}
+
 /* Responsive design for small screens */
 @media (max-width: 768px) {
 
@@ -183,10 +219,18 @@ body::before {
         font-size: 12px;
         text-align: right;
     }
-
-    /* Center search container */
-    .search-container {
+    .search-container{
         margin: auto;
+    }
+    /* //////pagination */
+    .pagination {
+        /* margin: 0; */
+        padding: 0; 
+        height: 0;
+    }
+    .pagination .icon {
+        width: 22px;
+        height: 22px;
     }
 
 }
