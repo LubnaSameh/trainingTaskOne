@@ -12,7 +12,8 @@ const Line = styled.div`
      @media (max-width: 768px) {
             width: 100px;
           margin: 5px auto 0 auto; 
-        }`;
+        }
+`;
 
 const Jobs = () => {
     const applications = [
@@ -28,13 +29,14 @@ const Jobs = () => {
         <div className="container mt-3">
             <div className="row">
                 {/* Left Div */}
-                <div className="col-lg-4 col-md-12 mb-3">
+                <div className="col-lg-3 col-md-12 mb-3">
                     <div className="left-content mt-3">
-                        <p className="text-white">Here you can add the content you want to place on the left side.</p>
+                        <p className="text-white">you can add the content you want to place on the left side.</p>
                     </div>
                 </div>
+                
                  {/* Right Div */}
-                 <div className="col-lg-8 col-md-12">
+                 <div className="col-lg-9 col-md-12">
                     {/* content of right div */}
                     <div className="row align-items-center justify-content-between mb-3">
                         <div className="col-md-12 text-md-start text-center">
