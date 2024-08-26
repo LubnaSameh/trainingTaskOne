@@ -26,17 +26,26 @@ const ApplicantJobs = () => {
     ];
 
     return (
-        <div className="container mt-3">
+        <div className="container mt-3 mb-5 ">
             <div className="row">
+                <div className="top-bar mb-0 mb-md-5 d-flex justify-content-between align-items-center mb-3">
+                    <div className="top-info text-white mb-0 mb-md-5 ">
+                        <div className="admin-panel-title">
+                            Admin Panel
+                            <div className="lineP "></div>
+                        </div>
+                        <p className="panel-date mb-0 mb-md-5">6th June 2023</p>
+                    </div>
+                </div>
                 {/* Left Div */}
                 <div className="col-lg-3 col-md-12 mb-3">
                     <div className="left-content mt-3">
                         <p className="text-white">you can add the content you want to place on the left side.</p>
                     </div>
                 </div>
-                
-                 {/* Right Div */}
-                 <div className="col-lg-9 col-md-12">
+
+                {/* Right Div */}
+                <div className="col-lg-9 col-md-12">
                     {/* content of right div */}
                     <div className="row align-items-center justify-content-between mb-3">
                         <div className="col-md-12 text-md-start text-center">
@@ -79,23 +88,17 @@ const ApplicantJobs = () => {
                             </tbody>
                         </table>
                     </div>
-                    <div class="pagination">
-                        <a href="#" class="arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
-                                <circle cx="12" cy="12" r="11" fill="none" stroke="#BF9530" stroke-width="2" />
-                                <path d="M14 16l-4-4 4-4" fill="none" stroke="#BF9530" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+                    <div className="pagination">
+                        <a href="#" className="arrow">
+                            <i className="fas fa-chevron-left" style={{ color: '#BF9530' }}></i>
                         </a>
+
                         <a href="#">1</a>
                         <a href="#">2</a>
                         <a href="#">3</a>
                         <span>.....</span>
-
-                        <a href="#" class="arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
-                                <circle cx="12" cy="12" r="11" fill="none" stroke="#BF9530" stroke-width="2" />
-                                <path d="M10 8l4 4-4 4" fill="none" stroke="#BF9530" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+                        <a href="#" className="arrow">
+                            <i className="fas fa-chevron-right" style={{ color: '#BF9530' }}></i>
                         </a>
                     </div>
 
