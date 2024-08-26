@@ -3,6 +3,8 @@ import Articles from './Articles';
 import Jobs from './Jobs';
 import Users from './usersStudent';
 import ApplicantJobs from './ApplicantJobs';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 function App() {
     return (
